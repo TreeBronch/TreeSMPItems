@@ -1,0 +1,4 @@
+name: TreeSMPItems
+version: '${project.version}'
+main: org.treesmpofficial.treesmpitems.TreeSMPItems
+api-version: 1.20
