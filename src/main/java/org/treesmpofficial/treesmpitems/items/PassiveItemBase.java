@@ -1,11 +1,9 @@
-package org.treesmpofficial.treesmpitems.Items;
+package org.treesmpofficial.treesmpitems.items;
 
 import com.google.common.collect.Multimap;
 import org.bukkit.Material;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.attribute.AttributeModifier;
-import org.bukkit.event.inventory.InventoryType;
-import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -15,18 +13,22 @@ public class PassiveItemBase {
     private String name; // Name of the item
     private String description;
 
+    private int id;
+
     public double damagePercentIncrease = 0;
     public double healthPercentIncrease = 0;
 
     private int maxStack;
     private int rarity;
-    private Material mat = Material.DIAMOND;
+    private Material mat;
 
-    public PassiveItemBase(String name, String description, int maxStack, int rarity, int id) {
+    public PassiveItemBase(String name, String description, int maxStack, int rarity, int id, Material mat) {
         this.name = name;
         this.description = description;
         this.maxStack = maxStack;
         this.rarity = rarity;
+        this.id = id;
+        this.mat = mat;
     }
 
     public String getName() {

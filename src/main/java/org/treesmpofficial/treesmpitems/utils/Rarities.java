@@ -1,4 +1,4 @@
-package org.treesmpofficial.treesmpitems.Utils;
+package org.treesmpofficial.treesmpitems.utils;
 
 public class Rarities {
     public static final int COMMON = 0;
